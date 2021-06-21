@@ -24,12 +24,11 @@
  */
 
 require_once('../../config.php');
-global $DB,$USER,$CFG; 
 require_once($CFG->dirroot . '/local/mbttutors/classes/mbttutors.php');
+global $DB,$USER,$CFG; 
 
-$PAGE->requires->css(new moodle_url('https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css'));
-$PAGE->requires->js(new moodle_url($CFG->wwwroot.'/local/mbttutors/assets/mbttutors.js'));
-$PAGE->requires->css(new moodle_url($CFG->wwwroot.'/local/mbttutors/assets/style.css'));
+$PAGE->requires->js(new moodle_url($CFG->wwwroot.'/local/mbttutors/assets/js/mbttutors.js'));
+$PAGE->requires->css(new moodle_url($CFG->wwwroot.'/local/mbttutors/assets/css/style.css'));
 
 $PAGE->set_url('/local/mbttutors/index.php');
 $PAGE->set_title(get_string('pluginname', 'local_mbttutors'));

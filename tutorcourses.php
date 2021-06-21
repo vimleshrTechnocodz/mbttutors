@@ -31,9 +31,8 @@ global $DB,$USER,$CFG;
 
 $tutorid = optional_param('tutorid', 0, PARAM_INT);
 
-$PAGE->requires->css(new moodle_url('https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css'));
-$PAGE->requires->js(new moodle_url($CFG->wwwroot.'/local/mbttutors/assets/mbttutors.js'));
-$PAGE->requires->css(new moodle_url($CFG->wwwroot.'/local/mbttutors/assets/style.css'));
+$PAGE->requires->js(new moodle_url($CFG->wwwroot.'/local/mbttutors/assets/js/mbttutors.js'));
+$PAGE->requires->css(new moodle_url($CFG->wwwroot.'/local/mbttutors/assets/css/style.css'));
 
 $PAGE->set_url('/local/mbttutors/tutorcourses.php');
 $PAGE->set_title(get_string('pluginname', 'local_mbttutors'));

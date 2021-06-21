@@ -4,7 +4,7 @@ require(['core/first','jquery','jqueryui','core/ajax'],function(core, $, bootstr
             e.preventDefault();
             var tutorId = $(this).attr('tutor-id');
             var d = new Date();
-            d.setTime(d.getTime() + (2 * 60 * 1000));
+            d.setTime(d.getTime() + (10 * 60 * 1000));
             var expires = "expires=" + d.toUTCString();
             document.cookie = "tutorId" + "=" + tutorId + ";" + expires + ";path=/";
             window.location = $(this).attr('href');           
